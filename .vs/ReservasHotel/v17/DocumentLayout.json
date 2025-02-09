@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\kaiqu\\source\\repos\\ReservasHotel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\formularios\\formnovareserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|solutionrelative:formularios\\formnovareserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\formularios\\formnovareserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|solutionrelative:formularios\\formnovareserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\formularios\\formnovareserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|solutionrelative:formularios\\formnovareserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|c:\\users\\kaiqu\\source\\repos\\reservashotel\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECAD7A6-9809-46A6-8C77-BCA4FC3C643B}|ReservasHotel.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormNovaReserva.cs",
+              "DocumentMoniker": "C:\\Users\\kaiqu\\source\\repos\\ReservasHotel\\Formularios\\FormNovaReserva.cs",
+              "RelativeDocumentMoniker": "Formularios\\FormNovaReserva.cs",
+              "ToolTip": "C:\\Users\\kaiqu\\source\\repos\\ReservasHotel\\Formularios\\FormNovaReserva.cs",
+              "RelativeToolTip": "Formularios\\FormNovaReserva.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwC8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T01:59:31.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormNovaReserva.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\kaiqu\\source\\repos\\ReservasHotel\\Formularios\\FormNovaReserva.cs",
               "RelativeDocumentMoniker": "Formularios\\FormNovaReserva.cs",
@@ -55,13 +72,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\kaiqu\\source\\repos\\ReservasHotel\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\kaiqu\\source\\repos\\ReservasHotel\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAQwBMAAAAeAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAzwBMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T01:06:17.829Z",
               "EditorCaption": ""
