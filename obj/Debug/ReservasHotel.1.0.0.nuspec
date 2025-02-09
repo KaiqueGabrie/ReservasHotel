@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ReservasHotel</id>
+    <version>1.0.0</version>
+    <authors>ReservasHotel</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="8152915e64945b9a9288278a978a7a3b8cb0e81a" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="MySql.Data" version="9.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\kaiqu\source\repos\ReservasHotel\bin\Debug\net8.0-windows\ReservasHotel.runtimeconfig.json" target="lib\net8.0-windows7.0\ReservasHotel.runtimeconfig.json" />
+    <file src="C:\Users\kaiqu\source\repos\ReservasHotel\bin\Debug\net8.0-windows\ReservasHotel.dll" target="lib\net8.0-windows7.0\ReservasHotel.dll" />
+  </files>
+</package>

@@ -8,16 +8,16 @@ namespace ReservasHotel.RegrasDeNegocio
 {
     public class Reserva
     {
-        public int _id;
-        public string _nome;
-        public string _cpf;
-        public string _email;
-        public string _telefone;
-        public string _dtCheckin;
-        public string _dtCheckout;
-        public string _hospedes;
-        public string _prefQuarto;
-        public string _tpQuarto;
-        public string _FormaPag;
+        public int _id { get; set; }
+        public string _nome { get; set; }
+        public string _cpf { get; set; }
+        public string _email { get; set; }
+        public string _telefone { get; set; }
+        public DateOnly _dtCheckin { get; set; }
+        public DateOnly _dtCheckout { get; set; }
+        public int _hospedes { get; set; }
+        public string _prefQuarto { get; set; }
+        public string _tpQuarto { get; set; }
+        public string _FormaPag { get; set; }
     }
 }
