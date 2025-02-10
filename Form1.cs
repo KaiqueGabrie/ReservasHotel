@@ -19,5 +19,17 @@ namespace ReservasHotel
             FormNovaReserva form = new FormNovaReserva();
             form.ShowDialog();
         }
+
+        private void btListarReservas_Click(object sender, EventArgs e)
+        {
+            FormListarReserva form = new FormListarReserva();
+            form.ShowDialog();
+        }
+
+        private void btEditarReserva_Click(object sender, EventArgs e)
+        {
+            FormEditarReserva form = new FormEditarReserva();
+            form.ShowDialog();
+        }
     }
 }

@@ -36,3 +36,5 @@ C:\Users\kaiqu\source\repos\ReservasHotel\bin\Debug\net8.0-windows\runtimes\win-
 C:\Users\kaiqu\source\repos\ReservasHotel\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel.csproj.AssemblyReference.cache
 C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\Reservas.F521E26E.Up2Date
+C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel.Formularios.FormListarReserva.resources
+C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel.Formularios.FormEditarReserva.resources

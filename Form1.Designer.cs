@@ -31,7 +31,7 @@
             lbTitulo = new Label();
             lbKaique = new Label();
             btNovaReserva = new Button();
-            btConsultarReser = new Button();
+            btListarReservas = new Button();
             btEditarReserva = new Button();
             btDeletarReserva = new Button();
             SuspendLayout();
@@ -42,10 +42,10 @@
             lbTitulo.BackColor = Color.Transparent;
             lbTitulo.Font = new Font("Century", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbTitulo.ForeColor = Color.Black;
-            lbTitulo.Location = new Point(389, 41);
+            lbTitulo.Location = new Point(350, 34);
             lbTitulo.Margin = new Padding(4, 0, 4, 0);
             lbTitulo.Name = "lbTitulo";
-            lbTitulo.Size = new Size(409, 39);
+            lbTitulo.Size = new Size(360, 34);
             lbTitulo.TabIndex = 0;
             lbTitulo.Text = "RESERVAS DE HOTEL";
             // 
@@ -53,10 +53,10 @@
             // 
             lbKaique.AutoSize = true;
             lbKaique.Font = new Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbKaique.Location = new Point(1034, 670);
+            lbKaique.Location = new Point(931, 563);
             lbKaique.Margin = new Padding(4, 0, 4, 0);
             lbKaique.Name = "lbKaique";
-            lbKaique.Size = new Size(152, 22);
+            lbKaique.Size = new Size(135, 20);
             lbKaique.TabIndex = 1;
             lbKaique.Text = "Kaique Gabriel";
             // 
@@ -64,59 +64,61 @@
             // 
             btNovaReserva.BackColor = Color.MediumSeaGreen;
             btNovaReserva.Font = new Font("Century", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btNovaReserva.Location = new Point(138, 162);
+            btNovaReserva.Location = new Point(124, 136);
             btNovaReserva.Name = "btNovaReserva";
-            btNovaReserva.Size = new Size(262, 41);
+            btNovaReserva.Size = new Size(236, 34);
             btNovaReserva.TabIndex = 2;
             btNovaReserva.Text = "Nova Reserva";
             btNovaReserva.UseVisualStyleBackColor = false;
             btNovaReserva.Click += btNovaReserva_Click;
             // 
-            // btConsultarReser
+            // btListarReservas
             // 
-            btConsultarReser.BackColor = Color.YellowGreen;
-            btConsultarReser.Font = new Font("Century", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btConsultarReser.Location = new Point(138, 240);
-            btConsultarReser.Name = "btConsultarReser";
-            btConsultarReser.Size = new Size(262, 41);
-            btConsultarReser.TabIndex = 3;
-            btConsultarReser.Text = "Consultar Reservas";
-            btConsultarReser.UseVisualStyleBackColor = false;
+            btListarReservas.BackColor = Color.YellowGreen;
+            btListarReservas.Font = new Font("Century", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btListarReservas.Location = new Point(124, 202);
+            btListarReservas.Name = "btListarReservas";
+            btListarReservas.Size = new Size(236, 34);
+            btListarReservas.TabIndex = 3;
+            btListarReservas.Text = "Listar Reservas";
+            btListarReservas.UseVisualStyleBackColor = false;
+            btListarReservas.Click += btListarReservas_Click;
             // 
             // btEditarReserva
             // 
             btEditarReserva.BackColor = Color.DodgerBlue;
             btEditarReserva.Font = new Font("Century", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btEditarReserva.Location = new Point(138, 316);
+            btEditarReserva.Location = new Point(124, 265);
             btEditarReserva.Name = "btEditarReserva";
-            btEditarReserva.Size = new Size(262, 41);
+            btEditarReserva.Size = new Size(236, 34);
             btEditarReserva.TabIndex = 4;
             btEditarReserva.Text = "Editar Reservas";
             btEditarReserva.UseVisualStyleBackColor = false;
+            btEditarReserva.Click += btEditarReserva_Click;
             // 
             // btDeletarReserva
             // 
             btDeletarReserva.BackColor = Color.Crimson;
             btDeletarReserva.Font = new Font("Century", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btDeletarReserva.Location = new Point(138, 392);
+            btDeletarReserva.Location = new Point(124, 329);
             btDeletarReserva.Name = "btDeletarReserva";
-            btDeletarReserva.Size = new Size(262, 41);
+            btDeletarReserva.Size = new Size(236, 34);
             btDeletarReserva.TabIndex = 5;
             btDeletarReserva.Text = "Deletar Reservas";
             btDeletarReserva.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1210, 704);
+            ClientSize = new Size(1089, 591);
             Controls.Add(btDeletarReserva);
             Controls.Add(btEditarReserva);
-            Controls.Add(btConsultarReser);
+            Controls.Add(btListarReservas);
             Controls.Add(btNovaReserva);
             Controls.Add(lbKaique);
             Controls.Add(lbTitulo);
-            Margin = new Padding(4);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -129,7 +131,7 @@
         private Label lbTitulo;
         private Label lbKaique;
         private Button btNovaReserva;
-        private Button btConsultarReser;
+        private Button btListarReservas;
         private Button btEditarReserva;
         private Button btDeletarReserva;
     }

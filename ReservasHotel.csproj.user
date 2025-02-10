@@ -4,6 +4,12 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Formularios\FormEditarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formularios\FormListarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Formularios\FormNovaReserva.cs">
       <SubType>Form</SubType>
     </Compile>

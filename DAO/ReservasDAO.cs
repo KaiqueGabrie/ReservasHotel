@@ -9,7 +9,7 @@ using ReservasHotel.RegrasDeNegocio;
 
 namespace ReservasHotel.DAO
 {
-    internal class ReservasDAO
+    public class ReservasDAO
     {
         public void Insert(Reserva reserva)
         {
@@ -60,20 +60,23 @@ namespace ReservasHotel.DAO
         {
             try
             {
-                string sql = "UPDATE Reservas SET nome = @nome, cpf = @cpf, email = @email, telefone = @telefone, dtCheckin = @dtcheckin, dtCheckout = @dtcheckout, hospedes = @hospedes, prefQuarto = @prefquarto, formaPag = @formapag WHERE id = @id";
+                string dtCheckin = reserva._dtCheckin.ToString("yyyy-MM-dd");
+                string dtCheckout = reserva._dtCheckout.ToString("yyyy-MM-dd");
+                string sql = "UPDATE Reserva SET nome = @nome, cpf = @cpf, email = @email, telefone = @telefone, dtCheckin = @dtcheckin, dtCheckout = @dtcheckout, hospedes = @hospedes, prefQuarto = @prefquarto, formaPag = @formapag WHERE id = @id";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
                 comando.Parameters.AddWithValue("@nome", reserva._nome);
                 comando.Parameters.AddWithValue("@cpf", reserva._cpf);
                 comando.Parameters.AddWithValue("@email", reserva._email);
                 comando.Parameters.AddWithValue("@telefone", reserva._telefone);
-                comando.Parameters.AddWithValue("@dtcheckin", reserva._dtCheckin);
-                comando.Parameters.AddWithValue("@dtcheckout", reserva._dtCheckout);
+                comando.Parameters.AddWithValue("@dtcheckin", dtCheckin);
+                comando.Parameters.AddWithValue("@dtcheckout", dtCheckout);
                 comando.Parameters.AddWithValue("@hospedes", reserva._hospedes);
                 comando.Parameters.AddWithValue("@prefquarto", reserva._prefQuarto);
                 comando.Parameters.AddWithValue("@tpquarto", reserva._tpQuarto);
                 comando.Parameters.AddWithValue("@formapag", reserva._FormaPag);
                 comando.Parameters.AddWithValue("@id", reserva._id);
                 comando.ExecuteNonQuery();
+                
                 Console.WriteLine("Reserva atualizada com sucesso!");
                 Conexao.FecharConexao();
             }
@@ -87,7 +90,7 @@ namespace ReservasHotel.DAO
             List<Reserva> reservas = new List<Reserva>();
             try
             {
-                var sql = "SELECT * FROM Reserva ORDERBY nome";
+                var sql = "SELECT * FROM Reserva ORDER BY nome";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
                 using (MySqlDataReader dr = comando.ExecuteReader())
                 {
@@ -112,7 +115,7 @@ namespace ReservasHotel.DAO
             }
             catch (Exception ex)
             {
-                throw new Exception($"Erro ao listas os alunos! {ex.Message}");
+                throw new Exception($"Erro ao listar as reservas! {ex.Message}");
             }
             return reservas;
         }
