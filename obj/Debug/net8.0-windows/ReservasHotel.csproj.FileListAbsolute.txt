@@ -38,3 +38,4 @@ C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel
 C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\Reservas.F521E26E.Up2Date
 C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel.Formularios.FormListarReserva.resources
 C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel.Formularios.FormEditarReserva.resources
+C:\Users\kaiqu\source\repos\ReservasHotel\obj\Debug\net8.0-windows\ReservasHotel.Formularios.FormDeletarReserva.resources

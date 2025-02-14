@@ -31,5 +31,11 @@ namespace ReservasHotel
             FormEditarReserva form = new FormEditarReserva();
             form.ShowDialog();
         }
+
+        private void btDeletarReserva_Click(object sender, EventArgs e)
+        {
+            FormDeletarReserva form = new FormDeletarReserva();
+            form.ShowDialog();
+        } 
     }
 }

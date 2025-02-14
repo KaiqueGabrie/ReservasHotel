@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ReservasHotel.RegrasDeNegocio;
+using ReservasHotel.Models;
 using MySqlX.XDevAPI.Common;
 
 namespace ReservasHotel.Formularios

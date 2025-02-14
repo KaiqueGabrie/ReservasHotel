@@ -1,3 +1,4 @@
+using ReservasHotel.Data;
 namespace ReservasHotel
 {
     internal static class Program

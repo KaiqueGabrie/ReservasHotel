@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ReservasHotel.DAO;
-using ReservasHotel.RegrasDeNegocio;
+using ReservasHotel.Models;
 
 namespace ReservasHotel.Formularios
 {

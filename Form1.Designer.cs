@@ -106,6 +106,7 @@
             btDeletarReserva.TabIndex = 5;
             btDeletarReserva.Text = "Deletar Reservas";
             btDeletarReserva.UseVisualStyleBackColor = false;
+            btDeletarReserva.Click += btDeletarReserva_Click;
             // 
             // Form1
             // 

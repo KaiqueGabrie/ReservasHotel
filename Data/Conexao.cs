@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace ReservasHotel.RegrasDeNegocio
+namespace ReservasHotel.Data
 {
     public class Conexao
     {
-        static MySqlConnection conexao; //Objeto resposável por controlar a conexão com a base
+        static MySqlConnection? conexao; //Objeto resposável por controlar a conexão com a base
         public static MySqlConnection Conectar()
         {
             try
@@ -21,13 +21,13 @@ namespace ReservasHotel.RegrasDeNegocio
                         - pwd irá definir a senha do usuário no SGBD
                         - database irá definir o nome da base de dados
                 */
-                string strconexao = "server=localhost;uid=root;pwd=root;database=ReservasHotel";
+                string strconexao = "server=localhost;port=3306;uid=root;pwd=root;database=reservashotel";
                 conexao = new MySqlConnection(strconexao);
                 conexao.Open();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Erro ao realizar a conexão com o banco de dados!");
+                Console.WriteLine("Erro ao realizar a conexão com o banco de dados!" + ex.Message);
             }
             return conexao;
         }

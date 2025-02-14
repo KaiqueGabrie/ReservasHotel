@@ -5,7 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using ReservasHotel.RegrasDeNegocio;
+using ReservasHotel.Models;
+using ReservasHotel.Data;
 
 namespace ReservasHotel.DAO
 {
@@ -43,7 +44,7 @@ namespace ReservasHotel.DAO
         {
             try
             {
-                string sql = "DELETE FROM Reservas WHERE id = @id";
+                string sql = "DELETE FROM Reserva WHERE id = @id";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
                 comando.Parameters.AddWithValue("@id", reserva._id);
                 comando.ExecuteNonQuery();
