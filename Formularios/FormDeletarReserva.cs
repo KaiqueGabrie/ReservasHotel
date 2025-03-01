@@ -30,7 +30,16 @@ namespace ReservasHotel.Formularios
             if (resultado == DialogResult.Yes)
             {
                 Reserva reserva = new Reserva();
-                reserva._id = int.Parse(txtID.Text);
+                if (string.IsNullOrEmpty(txtID.Text))
+                {
+                    MessageBox.Show("Erro: O campo ID não pode estar vazio.");
+                    return;
+                }
+                else
+                {
+                    reserva._id = int.Parse(txtID.Text);
+                }
+                
                 ReservasDAO reservasDAO = new ReservasDAO();
                 reservasDAO.Delete(reserva);
                 MessageBox.Show("Deletado com sucesso!", "DELETAR RESERVA", MessageBoxButtons.OK, MessageBoxIcon.Information);

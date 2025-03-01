@@ -16,9 +16,18 @@ namespace ReservasHotel.Formularios
         public FormListarReserva()
         {
             InitializeComponent();
-            ReservasDAO listReservas = new ReservasDAO();
+            try
+            {
+                
+                ReservasDAO listReservas = new ReservasDAO();
+                dgvListaReservas.DataSource = listReservas.List();
+                dgvListaReservas.ReadOnly = true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Erro ao exibir lista de reservas!" + ex.Message);
+            }
             
-            dgvListaReservas.DataSource = listReservas.List();
         }
     }
 }

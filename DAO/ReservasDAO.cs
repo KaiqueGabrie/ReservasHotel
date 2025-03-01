@@ -22,7 +22,7 @@ namespace ReservasHotel.DAO
                     "VALUES(@nome, @cpf, @email, @telefone, @dtcheckin, @dtcheckout, @hospedes, @prefquarto, @tpquarto, @formapag)"; // aqui os nomes iguais os que viram abaixo
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
                 comando.Parameters.AddWithValue("@nome", reserva._nome);    
-                comando.Parameters.AddWithValue("@cpf", reserva._cpf);    
+                comando.Parameters.AddWithValue("@cpf", reserva.GetCpf());    
                 comando.Parameters.AddWithValue("@email", reserva._email);    
                 comando.Parameters.AddWithValue("@telefone", reserva._telefone);    
                 comando.Parameters.AddWithValue("@dtcheckin", dtCheckin);    
@@ -66,7 +66,7 @@ namespace ReservasHotel.DAO
                 string sql = "UPDATE Reserva SET nome = @nome, cpf = @cpf, email = @email, telefone = @telefone, dtCheckin = @dtcheckin, dtCheckout = @dtcheckout, hospedes = @hospedes, prefQuarto = @prefquarto, formaPag = @formapag WHERE id = @id";
                 MySqlCommand comando = new MySqlCommand(sql, Conexao.Conectar());
                 comando.Parameters.AddWithValue("@nome", reserva._nome);
-                comando.Parameters.AddWithValue("@cpf", reserva._cpf);
+                comando.Parameters.AddWithValue("@cpf", reserva.GetCpf());
                 comando.Parameters.AddWithValue("@email", reserva._email);
                 comando.Parameters.AddWithValue("@telefone", reserva._telefone);
                 comando.Parameters.AddWithValue("@dtcheckin", dtCheckin);

@@ -85,7 +85,7 @@
             // 
             btDeletar.BackColor = Color.White;
             btDeletar.Font = new Font("Century", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btDeletar.Location = new Point(138, 239);
+            btDeletar.Location = new Point(159, 239);
             btDeletar.Name = "btDeletar";
             btDeletar.Size = new Size(236, 34);
             btDeletar.TabIndex = 66;

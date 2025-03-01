@@ -53,6 +53,8 @@
             txtCPF = new TextBox();
             lbNome = new Label();
             txtNome = new TextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbTitulo
@@ -88,6 +90,7 @@
             txtID.Name = "txtID";
             txtID.Size = new Size(461, 29);
             txtID.TabIndex = 4;
+            txtID.KeyDown += txtID_KeyDown;
             // 
             // btCancelar
             // 
@@ -327,11 +330,22 @@
             txtNome.Size = new Size(404, 29);
             txtNome.TabIndex = 24;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Design_sem_nome__3_;
+            pictureBox1.Location = new Point(727, 50);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(136, 138);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 46;
+            pictureBox1.TabStop = false;
+            // 
             // FormEditarReserva
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(932, 727);
+            Controls.Add(pictureBox1);
             Controls.Add(btCancelar);
             Controls.Add(btSalvar);
             Controls.Add(label3);
@@ -359,6 +373,7 @@
             Controls.Add(lbTitulo);
             Name = "FormEditarReserva";
             Text = "FormEditarReserva";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -390,5 +405,6 @@
         private TextBox txtCPF;
         private Label lbNome;
         private TextBox txtNome;
+        private PictureBox pictureBox1;
     }
 }

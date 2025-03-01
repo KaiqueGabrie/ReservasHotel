@@ -34,6 +34,8 @@
             btListarReservas = new Button();
             btEditarReserva = new Button();
             btDeletarReserva = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbTitulo
@@ -108,11 +110,23 @@
             btDeletarReserva.UseVisualStyleBackColor = false;
             btDeletarReserva.Click += btDeletarReserva_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.Design_sem_nome__1_;
+            pictureBox1.Image = Properties.Resources.Design_sem_nome__1_;
+            pictureBox1.Location = new Point(645, 117);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(328, 372);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1089, 591);
+            Controls.Add(pictureBox1);
             Controls.Add(btDeletarReserva);
             Controls.Add(btEditarReserva);
             Controls.Add(btListarReservas);
@@ -122,7 +136,7 @@
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,5 +149,6 @@
         private Button btListarReservas;
         private Button btEditarReserva;
         private Button btDeletarReserva;
+        private PictureBox pictureBox1;
     }
 }

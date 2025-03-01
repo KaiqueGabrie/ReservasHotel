@@ -35,11 +35,13 @@
             // 
             // dgvListaReservas
             // 
+            dgvListaReservas.BackgroundColor = Color.Wheat;
             dgvListaReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvListaReservas.Location = new Point(12, 209);
+            dgvListaReservas.GridColor = SystemColors.ControlText;
+            dgvListaReservas.Location = new Point(7, 99);
             dgvListaReservas.Name = "dgvListaReservas";
             dgvListaReservas.RowHeadersWidth = 53;
-            dgvListaReservas.Size = new Size(1051, 446);
+            dgvListaReservas.Size = new Size(1493, 754);
             dgvListaReservas.TabIndex = 0;
             // 
             // lbTitulo
@@ -48,7 +50,7 @@
             lbTitulo.BackColor = Color.Transparent;
             lbTitulo.Font = new Font("Century", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbTitulo.ForeColor = Color.Black;
-            lbTitulo.Location = new Point(398, 31);
+            lbTitulo.Location = new Point(595, 36);
             lbTitulo.Margin = new Padding(4, 0, 4, 0);
             lbTitulo.Name = "lbTitulo";
             lbTitulo.Size = new Size(343, 34);
@@ -59,7 +61,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1075, 667);
+            ClientSize = new Size(1512, 865);
             Controls.Add(lbTitulo);
             Controls.Add(dgvListaReservas);
             Name = "FormListarReserva";

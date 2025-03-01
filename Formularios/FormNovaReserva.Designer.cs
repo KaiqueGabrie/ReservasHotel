@@ -51,6 +51,8 @@
             txtPrefQuarto = new TextBox();
             btSalvar = new Button();
             btCancelar = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lbTitulo
@@ -305,11 +307,22 @@
             btCancelar.UseVisualStyleBackColor = false;
             btCancelar.Click += btCancelar_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Design_sem_nome__3_;
+            pictureBox1.Location = new Point(1028, 23);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(136, 138);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 47;
+            pictureBox1.TabStop = false;
+            // 
             // FormNovaReserva
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1260, 585);
+            Controls.Add(pictureBox1);
             Controls.Add(btCancelar);
             Controls.Add(btSalvar);
             Controls.Add(label3);
@@ -335,6 +348,7 @@
             Controls.Add(lbTitulo);
             Name = "FormNovaReserva";
             Text = "FormNovaReserva";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -364,5 +378,6 @@
         private TextBox txtPrefQuarto;
         private Button btSalvar;
         private Button btCancelar;
+        private PictureBox pictureBox1;
     }
 }
